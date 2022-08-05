@@ -16,7 +16,7 @@ $ sudo docker run -it seunghoonwoo/movery-public:latest
 (e.g., python3 Detector.py redis)
 ```
 
-Currently, there are 10 target programs that can detect vulnerabilities:
+Currently, there are 10 target programs that can be used to detect vulnerabilities:
 'arangodb', 'crown', 'emscripten', 'ffmpeg', 'freebsd-src', 'git', 'opencv', 'openMVG', 'reactos', 'redis'.
 
 ### About
