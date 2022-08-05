@@ -7,7 +7,8 @@ Principles and experimental results are discussed in our paper, which will be pu
 Owing to code refactoring issues, you can currently only test the results of the target programs listed in the paper. We will update the code to apply MOVERY to other software as soon as possible.
 
 ## How to use
-You can test [MOVERY](https://hub.docker.com/r/seunghoonwoo/movery-public) using Docker:
+You can test [MOVERY](https://hub.docker.com/r/seunghoonwoo/movery-public) using Docker.
+All the datasets used in MOVERY and the source code of the detector are contained in the Docker image.
 ```
 $ sudo docker run -it seunghoonwoo/movery-public:latest
 # cd /home/MOVERY
