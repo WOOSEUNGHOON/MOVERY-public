@@ -10,13 +10,13 @@ Owing to code refactoring issues, you can currently only test the results of the
 You can test [MOVERY](https://hub.docker.com/r/seunghoonwoo/movery-public) using Docker:
 ```
 $ sudo docker run -it seunghoonwoo/movery-public:latest
-$ cd /home/MOVERY
-$ python3 Detector.py TARGET_PROGRAM
+# cd /home/MOVERY
+# python3 Detector.py TARGET_PROGRAM
 (e.g., python3 Detector.py redis)
 ```
 
 Currently, there are 10 target programs that can detect vulnerabilities:
-'arangodb', 'crown', 'emscripten', 'ffmpeg', 'freebsd-src', 'git', 'opencv', 'openMVG', 'reactos', 'redis'
+'arangodb', 'crown', 'emscripten', 'ffmpeg', 'freebsd-src', 'git', 'opencv', 'openMVG', 'reactos', 'redis'.
 
 ### About
 This repository is authored and maintained by Seunghoon Woo.
