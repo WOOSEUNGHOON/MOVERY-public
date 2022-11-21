@@ -19,6 +19,11 @@ $ sudo docker run -it seunghoonwoo/movery-public:latest
 Currently, there are 10 target programs that can be used to detect vulnerabilities:
 'arangodb', 'crown', 'emscripten', 'ffmpeg', 'freebsd-src', 'git', 'opencv', 'openMVG', 'reactos', 'redis'.
 
+### FAQ
+
+- You can check vulnerability and patch datasets from Docker.
+- A patch signature only considers code lines that are not included in the respective vulnerability signature. 
+
 ### About
 This repository is authored and maintained by Seunghoon Woo.
 
