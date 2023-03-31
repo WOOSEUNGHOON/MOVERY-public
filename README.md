@@ -4,8 +4,6 @@ MOVERY is a tool for discovering modified vulnerable code clones.
 Principles and experimental results are discussed in our paper, which will be published in
 31st USENIX Security Symposium (Security 2022).
 
-Owing to code refactoring issues, you can currently only test the results of the target programs listed in the paper. We will update the code to apply MOVERY to other software as soon as possible.
-
 ## How to use
 **[2023-03-31: NOW IT IS UPDATED]**
 You can test [MOVERY](https://hub.docker.com/r/seunghoonwoo/movery-public) using Docker.
