@@ -7,17 +7,36 @@ Principles and experimental results are discussed in our paper, which will be pu
 Owing to code refactoring issues, you can currently only test the results of the target programs listed in the paper. We will update the code to apply MOVERY to other software as soon as possible.
 
 ## How to use
+**[2023-03-31: NOW IT IS UPDATED]**
 You can test [MOVERY](https://hub.docker.com/r/seunghoonwoo/movery-public) using Docker.
 All the datasets used in MOVERY and the source code of the detector are contained in the Docker image.
+
+### 1. Execute MOVERY-Docker
 ```
 $ sudo docker run -it seunghoonwoo/movery-public:latest
 # cd /home/MOVERY
-# python3 Detector.py TARGET_PROGRAM
-(e.g., python3 Detector.py redis)
 ```
 
-Currently, there are 10 target programs that can be used to detect vulnerabilities:
-'arangodb', 'crown', 'emscripten', 'ffmpeg', 'freebsd-src', 'git', 'opencv', 'openMVG', 'reactos', 'redis'.
+### 2. Prepare testing repository
+Suppose we want to scan the "redis" repository.
+```
+# git clone https://github.com/redis/redis
+```
+Now "/home/MOVERY/redis" is prepared.
+
+### 3. Run preprocessor
+```
+# python3 Preprocessor.py TARGET_PROGRAM
+(e.g., python3 Preprocessor.py redis)
+```
+This may take several minutes depending on the code size.
+
+### 4. Run Detector
+```
+# python3 Detector.py TARGET_PROGRAM 0
+(e.g., python3 Detector.py redis 0)
+```
+The vulnerability detection result will be printed.
 
 ### FAQ
 
